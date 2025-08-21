@@ -1,0 +1,79 @@
+/* Force solid backgrounds for dialog overlays */
+[data-radix-dialog-overlay] {
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Force solid backgrounds for dialog content */
+[data-radix-dialog-content] {
+  background: white !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
+/* Dark mode for dialog content */
+.dark [data-radix-dialog-content] {
+  background: #1f2937 !important; /* dark:bg-gray-800 */
+  border-color: #374151 !important; /* dark:border-gray-700 */
+}
+
+/* Force solid backgrounds for select dropdown */
+[data-radix-select-content] {
+  background: white !important;
+  border: 1px solid #e5e7eb !important;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Dark mode for select dropdown */
+.dark [data-radix-select-content] {
+  background: #1f2937 !important; /* dark:bg-gray-800 */
+  border-color: #374151 !important; /* dark:border-gray-700 */
+}
+
+/* Force solid backgrounds for tabs */
+[role="tablist"] {
+  background: #f3f4f6 !important; /* bg-gray-100 */
+}
+
+.dark [role="tablist"] {
+  background: #374151 !important; /* dark:bg-gray-700 */
+}
+
+[role="tab"][data-state="active"] {
+  background: white !important;
+}
+
+.dark [role="tab"][data-state="active"] {
+  background: #1f2937 !important; /* dark:bg-gray-800 */
+}
+
+/* Force solid backgrounds for card components */
+.card {
+  background: white !important;
+}
+
+.dark .card {
+  background: #1f2937 !important; /* dark:bg-gray-800 */
+}
+
+/* Fix CardInspectionModal specific styling */
+.CardInspectionModal-content {
+  background: white !important;
+}
+
+.dark .CardInspectionModal-content {
+  background: #1f2937 !important; /* dark:bg-gray-800 */
+}
+
+/* Fix for tabs content in the card inspection modal */
+.TabsContent {
+  background: white !important;
+}
+
+.dark .TabsContent {
+  background: #1f2937 !important; /* dark:bg-gray-800 */
+}
+
+/* Make sure dialog backdrops are dark enough */
+.DialogOverlay {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
